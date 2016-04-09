@@ -21,7 +21,7 @@
 html, body { height: 100%; }
 
 /* make body transparent so the background image in html shows */
-body { background: transparent }
+html, body { background: transparent }
 
 /* make scrollbar appear always */
 html {
