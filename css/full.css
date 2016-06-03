@@ -23,7 +23,7 @@ body {
 /* For devices smaller than 400px: */
 @media only screen and (max-device-width: 400px) {
     .full { 
-        background: url('https://raw.githubusercontent.com/rjspiers/qgis-batch-save-layers/master/icon.png') no-repeat center center fixed; 
+        background: url('../img/neon-treble-clef-2.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
