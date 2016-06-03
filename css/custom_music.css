@@ -54,7 +54,10 @@ p {
     color: white;
 }
 
-
+form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /* make site take up 100% of screen */
 html, body { height: 100%; }
