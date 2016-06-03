@@ -39,6 +39,14 @@ navbar-header {
     background: none;
 }
 
+collapse {
+    background: none;
+}
+
+navbar-collapse {
+    background: none;
+}
+
 /* make scrollbar appear always */
 html {
     overflow: scroll;
