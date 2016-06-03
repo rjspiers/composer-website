@@ -120,6 +120,17 @@
 					<div class="col-lg-8 col-lg-offset-2">
 					<p>This uses formspree - it's set to my email for the minute.</p>
 
+						<!-- Hidden message to show if contact is successful. -->
+						<div id="submit-success" class="collapse">
+						  Message received! I'll be in touch.
+						</div>
+
+						<!-- Hidden message to show if user encounters errors. -->
+						<div id="submit-errors" class="collapse">
+						  It looks like there was an error submitting the form.
+						  Please try again later.
+						</div>
+
 						<form id="contactform" method="POST" class="form">
 							<!-- Customer Name -->
 							<div class="row control-group">
@@ -167,7 +178,29 @@
 						    var contactform =  document.getElementById('contactform');
 						    contactform.setAttribute('action', '//formspree.io/' + 'rjspiers1' + '@' + 'gmail' + '.' + 'com');
 						</script>
-					
+						<script>
+						$("#contactform").validate({
+						  submitHandler: function(form) {
+						    $.ajax({
+						      url: "//formspree.io/rjspiers1@gmail.com", 
+						      method: "POST",
+						      data: {
+						        name: $(form).find("input[name='name']").val(),
+						        _replyto: $(form).find("input[name='_replyto']").val(),
+						        message: $(form).find("textarea[name='message']").val()
+						      },
+						      dataType: "json",
+						      success: function() {
+						        $("#submit-success").fadeIn();
+						        $("#contact-form").fadeOut();
+						      },
+						      error: function() {
+						        $("#submit-errors").fadeIn();        
+						      }
+						    });
+						  }
+						});
+						</script>
 					</div><!-- column -->
 				</div><!-- row -->
 			</div><!-- form -->
@@ -180,6 +213,9 @@
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- Near the end of my page -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 
 </body>
 
