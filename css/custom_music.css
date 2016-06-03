@@ -23,35 +23,35 @@ html, body { height: 100%; }
 /* make body transparent so the background image in html shows */
 html, body, nav { background: none }
 
-navbar-default {
+.navbar-default {
     background: none;
 }
 
-navbar {
+.navbar {
     background: none;
 }
 
-navbar-static-top {
+.navbar-static-top {
     background: none;
 }
 
-navbar-header {
+.navbar-header {
     background: none;
 }
 
-collapse {
+.collapse {
     background: none;
 }
 
-navbar-collapse {
+.navbar-collapse {
     background: none;
 }
 
-navbar-tab {
+.navbar-tab {
     background: none;
 }
 
-nav-justified {
+.nav-justified {
     background: none;
 }
 
