@@ -40,8 +40,14 @@ h4 {
     color: #337ab7;
 }
 
-label, textarea, input {
+textarea, input {
     font-family: Jaldi;
+}
+
+label {
+    font-family: Jaldi;
+    color: #337ab7;
+    font-size: 14px;
 }
 
 p {
@@ -122,11 +128,59 @@ html, body, nav {
     border: none; 
 }
 
+/*.nav-justified > li > a:hover{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}*/
+
+.nav > li > a {
+    transition: all 0.5s ease 0s;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #fff;
+  /*opacity: 0.8;*/
+  box-shadow: 
+      0 8px 12px 0 rgba(230, 230, 230,0.5), 
+      0 12px 16px 0 rgba(230, 230, 230,0.24), 
+      0 17px 50px 0 rgba(230, 230, 230,0.19);
+}
+
+/*.nav-justified > li:> a:focus{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}
+
+.nav-justified > li:> a:active{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}*/
+
+/*.nav {
+    background-color: #000 !important;
+}*/
+
+/*.nav>li>a {
+    background-color: #666 !important;
+    color: #fff;
+}*/
+
 .navbar-toggle {
     background: none;
     border: none; 
 }
-    
+
+.nav-tabs {
+    background-color:#161616;
+}   
 
 /* make scrollbar appear always */
 html {
