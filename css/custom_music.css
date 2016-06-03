@@ -85,7 +85,7 @@ html, body, nav {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 8px 80px;
+  padding: 15px 80px; /*brand name padding*/
   font-size: 18px;
   line-height: 20px;
 }
@@ -108,11 +108,13 @@ html, body, nav {
 .navbar-collapse {
     background: rgba(13, 13, 13, 0.7);
     border: none; 
+    margin-bottom: 0px;
 }
 
 .navbar-tab {
     background: none;
     border: none; 
+    padding-top: 8px; /*tab button padding*/
 }
 
 .nav-justified {
