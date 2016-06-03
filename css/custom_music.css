@@ -106,7 +106,7 @@ html, body, nav {
 }
 
 .navbar-collapse {
-    background: none;
+    background: rgba(13, 13, 13, 0.7);
     border: none; 
 }
 
