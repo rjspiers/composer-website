@@ -10,12 +10,14 @@ body {
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
-.full {
-    background: url('http://universe-beauty.com/albums/userpics/1/3/Space-Art-Wallpaper-1920x1080_157.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+@media only screen and (min-device-width: 400px) {
+    .full {
+        background: url('http://universe-beauty.com/albums/userpics/1/3/Space-Art-Wallpaper-1920x1080_157.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
 }
 
 /* For devices smaller than 400px: */
