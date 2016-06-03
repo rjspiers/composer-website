@@ -35,6 +35,10 @@ navbar-static-top {
     background: none;
 }
 
+navbar-header {
+    background: none;
+}
+
 /* make scrollbar appear always */
 html {
     overflow: scroll;
