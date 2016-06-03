@@ -187,6 +187,7 @@ html {
     overflow: scroll;
 }
 
+/* Hamburger animation */
 .navbar-toggle .icon-bar:nth-of-type(2) {
       top: 1px;
 }
