@@ -21,39 +21,16 @@
 html, body { height: 100%; }
 
 /* make body transparent so the background image in html shows */
-html, body, nav { background: none }
+html, body, nav { 
+    background: none;
+    border: none; 
+}
 
 .navbar-default {
     background: none;
+    border: none; 
 }
 
-.navbar {
-    background: none;
-}
-
-.navbar-static-top {
-    background: none;
-}
-
-.navbar-header {
-    background: none;
-}
-
-.collapse {
-    background: none;
-}
-
-.navbar-collapse {
-    background: none;
-}
-
-.navbar-tab {
-    background: none;
-}
-
-.nav-justified {
-    background: none;
-}
 
 /* make scrollbar appear always */
 html {
