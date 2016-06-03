@@ -12,8 +12,15 @@ body {
 
 .full {
     background: url('http://universe-beauty.com/albums/userpics/1/3/Space-Art-Wallpaper-1920x1080_157.jpg') no-repeat center center fixed;
-    -webkit-background-size: 150% 150%;
-    -moz-background-size: 150% 150%;
-    background-size: 150% 150%;
-    -o-background-size: 150% 150%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* For devices smaller than 400px: */
+@media only screen and (max-device-width: 400px) {
+    .full { 
+        background-image: url('https://github.com/rjspiers/qgis-batch-save-layers/blob/master/icon.png'); 
+    }
 }
