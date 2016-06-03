@@ -23,6 +23,10 @@ html, body { height: 100%; }
 /* make body transparent so the background image in html shows */
 html, body, nav { background: none }
 
+navbar-default {
+    background: none;
+}
+
 /* make scrollbar appear always */
 html {
     overflow: scroll;
