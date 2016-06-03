@@ -47,6 +47,14 @@ navbar-collapse {
     background: none;
 }
 
+navbar-tab {
+    background: none;
+}
+
+nav-justified {
+    background: none;
+}
+
 /* make scrollbar appear always */
 html {
     overflow: scroll;
