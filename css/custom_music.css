@@ -68,6 +68,10 @@ html, body, nav {
     border: none; 
 }
 
+.glyphicon {
+    color: #337ab7;
+}
+
 .navbar-default {
     background: none;
     border: none; 
@@ -76,6 +80,14 @@ html, body, nav {
 .navbar {
     background: none;
     border: none; 
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 8px 80px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .navbar-static-top {
