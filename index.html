@@ -179,29 +179,7 @@
 						    contactform.setAttribute('action', '//formspree.io/' + 'rjspiers1' + '@' + 'gmail' + '.' + 'com');
 						</script>
 						
-						<script>
-						$("#contactform").validate({
-						  submitHandler: function(form) {
-						    $.ajax({
-						      url: "//formspree.io/rjspiers1@gmail.com", 
-						      method: "POST",
-						      data: {
-						        name: $(form).find("input[name='name']").val(),
-						        _replyto: $(form).find("input[name='_replyto']").val(),
-						        message: $(form).find("textarea[name='message']").val()
-						      },
-						      dataType: "json",
-						      success: function() {
-						        $("#submit-success").fadeIn();
-						        $("#contact-form").fadeOut();
-						      },
-						      error: function() {
-						        $("#submit-errors").fadeIn();        
-						      }
-						    });
-						  }
-						});
-						</script>
+						
 					</div><!-- column -->
 				</div><!-- row -->
 			</div><!-- form -->
@@ -225,7 +203,29 @@
 			});
 		});
 	</script>
-
+	<script>
+		$("#contactform").validate({
+		  submitHandler: function(form) {
+		    $.ajax({
+		      url: "//formspree.io/rjspiers1@gmail.com", 
+		      method: "POST",
+		      data: {
+		        name: $(form).find("input[name='name']").val(),
+		        _replyto: $(form).find("input[name='_replyto']").val(),
+		        message: $(form).find("textarea[name='message']").val()
+		      },
+		      dataType: "json",
+		      success: function() {
+		        $("#submit-success").fadeIn();
+		        $("#contact-form").fadeOut();
+		      },
+		      error: function() {
+		        $("#submit-errors").fadeIn();        
+		      }
+		    });
+		  }
+		});
+	</script>
 </body>
 
 </html>
