@@ -122,13 +122,13 @@
 
 						<!-- Hidden message to show if contact is successful. -->
 						<div id="submit-success" class="collapse">
-						  Message received! I'll be in touch.
+						  <p class="submit-success">Message received! I'll get in touch.</p>
 						</div>
 
 						<!-- Hidden message to show if user encounters errors. -->
 						<div id="submit-errors" class="collapse">
-						  It looks like there was an error submitting the form.
-						  Please try again later.
+						  <p class="submit-errors">It looks like there was an error submitting the form.
+						  Please try again later.</p>
 						</div>
 
 						<form id="contactform" method="POST" class="form">
@@ -217,7 +217,7 @@
 		      dataType: "json",
 		      success: function() {
 		        $("#submit-success").fadeIn();
-		        $("#contact-form").fadeOut();
+		        $("#contactform").fadeOut();
 		      },
 		      error: function() {
 		        $("#submit-errors").fadeIn();        

@@ -60,6 +60,26 @@ p {
     color: white;
 }
 
+p.submit-success {
+    font-family: Jaldi;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #00cc00;
+}
+
+p.submit-errors {
+    font-family: Jaldi;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ff0000;
+}
+
 form {
     margin-left: 10px;
     margin-right: 10px;
