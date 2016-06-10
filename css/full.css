@@ -17,6 +17,7 @@ body {
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
+        background-attachment: fixed;
     }
 }
 
@@ -28,5 +29,6 @@ body {
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
+        background-attachment: fixed;
     }
 }
