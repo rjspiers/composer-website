@@ -65,7 +65,7 @@ p.submit-success {
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 20px;
     color: #00cc00;
 }
@@ -75,7 +75,7 @@ p.submit-errors {
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 20px;
     color: #ff0000;
 }
