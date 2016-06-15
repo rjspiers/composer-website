@@ -1,0 +1,185 @@
+#container {
+	width: 50%;
+	height: auto;
+}
+
+#check {
+  fill: none;
+  stroke: #00cc00;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 55;
+  stroke-dashoffset: 55;
+  animation: draw 2s infinite ease;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#polygon {
+  fill: #b3ffb3;
+  fill-opacity: 0;
+  stroke: #00cc00;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-dasharray: 1150;
+  stroke-dashoffset: 1150;
+  animation: 
+	 draw 5s infinite ease,
+	 fill 5s infinite ease;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+	0% {
+		fill-opacity: 0;
+	}
+  10% {
+    fill-opacity: 0.1;
+  }
+	25% {
+    fill-opacity: 0.25;
+  }
+  50% {
+    fill-opacity: 0.50;
+  }
+  75% {
+		fill-opacity: 0.75;
+	}
+	100% {
+		fill-opacity: 1;
+	}
+}
+
+#brand-text {
+  fill: #66c2ff;
+  stroke: #0066ff;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: 
+    draw 5s infinite ease,
+    fill 5s infinite ease;
+  font-family: Verdana;
+  font-size: 30;
+  font-weight: bold;
+}
+
+#cont-treble-clef {
+  width: 20%;
+  height: auto;
+  align-content: left;
+}
+
+#treble-clef {
+/*  fill: #b3ffb3;
+  fill-opacity: 0;*/
+  stroke: #ff3300;
+  stroke-width: 0.5;
+  stroke-linecap: round;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: 
+   draw-stroke-infinite 8s infinite ease,
+   fill-in-out 8s infinite ease,
+   stroke-fade-out-in 8s infinite ease;
+}
+
+
+@keyframes draw-stroke-infinite {
+  0% {
+    stroke-dashoffset: 1500;
+  }
+  25% {
+    stroke-dashoffset: 500;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  75% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 1500;
+  }
+}
+
+@keyframes stroke-fade-out-in {
+  0% {
+    stroke-opacity: 1;
+  }
+  10% {
+    stroke-opacity: 0.75;
+  }
+  20% {
+    stroke-opacity: 0.50;
+  }
+  30% {
+    stroke-opacity: 0.25;
+  }
+  40% {
+    stroke-opacity: 0.1;
+  }
+  50% {
+    stroke-opacity: 0;
+  }
+  60% {
+    stroke-opacity: 0.1;
+  }
+  70% {
+    stroke-opacity: 0.25;
+  }
+  80% {
+    stroke-opacity: 0.50;
+  }
+  90% {
+    stroke-opacity: 0.75;
+  }
+  100% {
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes fill-in-out {
+  0% {
+    fill-opacity: 0;
+  }
+  10% {
+    fill-opacity: 0;
+  }
+  20% {
+    fill-opacity: 0.0;
+  }
+  30% {
+    fill-opacity: 0.75;
+  }
+  40% {
+    fill-opacity: 0.75;
+  }
+  50% {
+    fill-opacity: 0.75;
+  }
+  60% {
+    fill-opacity: 0.75;
+  }
+  70% {
+    fill-opacity: 0.75;
+  }
+  80% {
+    fill-opacity: 0.0;
+  }
+  90% {
+    fill-opacity: 0.0;
+  }
+  100% {
+    fill-opacity: 0;
+  }
+}
